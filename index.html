@@ -2,222 +2,136 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pizzaria Bauducco - Cardápio Digital</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <title>Cardápio - Sports Bar</title>
   <style>
-    /* Reset básico */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f9f7f4;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
       color: #333;
+      margin: 0;
+      padding: 20px;
       line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: white;
+    }
+    .header img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    .menu {
       padding: 20px;
     }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    }
-
-    header {
-      background: #d40000;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-    }
-
-    header .logo {
-      max-width: 180px;
-      margin: 0 auto 15px;
-      display: block;
-    }
-
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2em;
-      margin-bottom: 8px;
-    }
-
-    header p {
-      font-weight: 500;
-      opacity: 0.9;
-      font-size: 1.1em;
-    }
-
-    .menu-section {
-      padding: 25px;
-      border-bottom: 1px solid #eee;
-    }
-
-    .menu-section h2 {
-      color: #d40000;
-      font-size: 1.6em;
+    .section {
       margin-bottom: 20px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #eee;
-      display: inline-block;
     }
-
-    .menu-item {
+    .section h2 {
+      color: #007B3B;
+      border-bottom: 2px solid #007B3B;
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+    .item {
       display: flex;
-      margin-bottom: 20px;
-      gap: 15px;
-      align-items: flex-start;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px dashed #ddd;
     }
-
-    .menu-item img {
-      width: 90px;
-      height: 90px;
-      object-fit: cover;
-      border-radius: 8px;
-      flex-shrink: 0;
+    .item:last-child {
+      border-bottom: none;
     }
-
-    .item-content {
-      flex: 1;
+    .price {
+      font-weight: bold;
+      color: #007B3B;
     }
-
-    .item-content .name {
-      font-weight: 600;
-      font-size: 1.1em;
-      color: #222;
-    }
-
-    .item-content .price {
-      color: #d40000;
-      font-weight: 700;
-      margin-left: 10px;
-    }
-
-    .item-content small {
-      color: #666;
-      display: block;
-      margin-top: 5px;
-      font-size: 0.95em;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #f1f1f1;
-      color: #555;
-      font-size: 0.95em;
-    }
-
-    footer a {
-      color: #d40000;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8em;
-      }
-      .menu-item {
-        flex-direction: column;
-      }
-      .menu-item img {
-        width: 100%;
-        max-width: 200px;
-      }
+    .promo {
+      background-color: #fff9e6;
+      padding: 10px;
+      border-left: 4px solid #007B3B;
+      margin: 15px 0;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <header>
-      <!-- LOGO: substitua pelo link do seu logo no Imgur -->
-      <img src="https://i.imgur.com/0qR1l9b.png" alt="Logo Trattoria Bella Vista" class="logo">
-      <h1>Trattoria Bella Vista</h1>
-      <p>🍝 Desde 1995 servindo a melhor comida italiana da cidade</p>
-    </header>
+    <div class="header">
+      <img src="https://i.imgur.com/8K7XcA1.jpg" alt="Logo Sports Bar" />
+      <h1>Sports Bar</h1>
+      <p>Best Craft Beer • Jogo na TV • Ambiente Animado</p>
+    </div>
 
-    <section class="menu-section">
-      <h2>🍝 Massas</h2>
+    <div class="menu">
 
-      <div class="menu-item">
-        <img src="https://i.imgur.com/mF2TbYc.jpg" alt="Espaguete à Carbonara">
-        <div class="item-content">
-          <span class="name">Espaguete à Carbonara</span>
-          <span class="price">R$ 42,00</span>
-          <small>Com ovos, bacon artesanal, queijo parmesão e pimenta-do-reino.</small>
+      <div class="section">
+        <h2>Bebidas</h2>
+        <div class="item">
+          <span>Cerveja Pilsen</span>
+          <span class="price">R$ 12,00</span>
         </div>
-      </div>
-
-      <div class="menu-item">
-        <img src="https://i.imgur.com/3JZj5Vh.jpg" alt="Nhoque ao Pesto">
-        <div class="item-content">
-          <span class="name">Nhoque ao Pesto</span>
-          <span class="price">R$ 38,00</span>
-          <small>Nhoque caseiro com molho pesto, tomate cereja e queijo ralado.</small>
+        <div class="item">
+          <span>Cerveja Artesanal</span>
+          <span class="price">R$ 18,00</span>
         </div>
-      </div>
-
-    </section>
-
-    <section class="menu-section">
-      <h2>🍕 Pizzas</h2>
-
-      <div class="menu-item">
-        <img src="https://i.imgur.com/ZYq6789.jpg" alt="Pizza Margherita">
-        <div class="item-content">
-          <span class="name">Pizza Margherita</span>
-          <span class="price">R$ 45,00</span>
-          <small>Molho de tomate fresco, mussarela premium, manjericão e azeite extravirgem.</small>
-        </div>
-      </div>
-
-      <div class="menu-item">
-        <img src="https://i.imgur.com/XYZ1234.jpg" alt="Pizza Calabresa">
-        <div class="item-content">
-          <span class="name">Pizza Calabresa</span>
-          <span class="price">R$ 48,00</span>
-          <small>Mussarela, calabresa defumada, cebola e azeitonas pretas.</small>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="menu-section">
-      <h2>🥤 Bebidas</h2>
-
-      <div class="menu-item">
-        <img src="https://i.imgur.com/abc123xyz.jpg" alt="Refrigerante 350ml">
-        <div class="item-content">
-          <span class="name">Refrigerante Lata</span>
+        <div class="item">
+          <span>Refrigerante</span>
           <span class="price">R$ 8,00</span>
         </div>
-      </div>
-
-      <div class="menu-item">
-        <img src="https://i.imgur.com/def456uvw.jpg" alt="Suco Natural 500ml">
-        <div class="item-content">
-          <span class="name">Suco Natural</span>
-          <span class="price">R$ 12,00</span>
-          <small>Laranja, abacaxi ou limão com hortelã.</small>
+        <div class="item">
+          <span>Água Mineral</span>
+          <span class="price">R$ 5,00</span>
         </div>
       </div>
 
-    </section>
+      <div class="section">
+        <h2>Petiscos</h2>
+        <div class="item">
+          <span>Porção de Batata Frita</span>
+          <span class="price">R$ 15,00</span>
+        </div>
+        <div class="item">
+          <span>Cheddar com Bacon</span>
+          <span class="price">R$ 22,00</span>
+        </div>
+        <div class="item">
+          <span>Frango à Passarinho</span>
+          <span class="price">R$ 20,00</span>
+        </div>
+        <div class="item">
+          <span>Nuggets</span>
+          <span class="price">R$ 18,00</span>
+        </div>
+      </div>
 
-    <footer>
-      <p>📞 Peça pelo WhatsApp: target="_blank">(61) 999244244</a></p>
-      <p>📍 Qms 18 Rua 12 Casa 21 Sobradinho DF</p>
-      <p>⏰ Atendimento: Terça a Domingo, das 18h às 23h</p>
-    </footer>
+      <div class="promo">
+        <strong>🎯 Promoção:</strong> 2 cervejas por R$ 20,00 (segunda a sexta)
+      </div>
+
+      <div class="section">
+        <h2>Combo</h2>
+        <div class="item">
+          <span>Combo Cerveja + Batata Frita</span>
+          <span class="price">R$ 25,00</span>
+        </div>
+        <div class="item">
+          <span>Combo Artesanal + Cheddar</span>
+          <span class="price">R$ 35,00</span>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 </body>
