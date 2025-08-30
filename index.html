@@ -2,77 +2,107 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Cardápio - EM CONSTRUÇAO CAIO COSTA </title>
+  <title>Cardápio - Sports Bar Premium</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
+      background-color: #f5f5f5;
       color: #333;
       margin: 0;
       padding: 20px;
       line-height: 1.6;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       overflow: hidden;
+      position: relative;
     }
     .header {
       text-align: center;
-      padding: 20px;
-      background-color: #000;
+      padding: 30px 20px;
+      background: linear-gradient(to bottom, #000, #1a1a1a);
       color: white;
+      position: relative;
     }
     .header img {
       max-width: 100%;
       height: auto;
       margin-bottom: 15px;
     }
+    .header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .header p {
+      font-size: 1.1em;
+      margin: 10px 0 0;
+      opacity: 0.9;
+    }
     .menu {
-      padding: 20px;
+      padding: 25px;
     }
     .section {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     .section h2 {
-      color: #007B3B;
-      border-bottom: 2px solid #007B3B;
+      color: #c40000;
+      border-bottom: 3px solid #c40000;
       padding-bottom: 5px;
       margin-top: 0;
+      font-size: 1.8em;
+      font-weight: bold;
     }
     .item {
       display: flex;
       justify-content: space-between;
-      padding: 10px 0;
+      padding: 12px 0;
       border-bottom: 1px dashed #ddd;
+      font-size: 1.1em;
     }
     .item:last-child {
       border-bottom: none;
     }
     .price {
       font-weight: bold;
-      color: #007B3B;
+      color: #c40000;
+      font-size: 1.2em;
     }
     .promo {
       background-color: #fff9e6;
-      padding: 10px;
-      border-left: 4px solid #007B3B;
-      margin: 15px 0;
+      padding: 15px;
+      border-left: 5px solid #c40000;
+      margin: 20px 0;
+      font-weight: bold;
+      color: #c40000;
+      font-size: 1.2em;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #f0f0f0;
+      font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
+    <!-- Cabeçalho com logo -->
     <div class="header">
-      <img src="https://i.imgur.com/8K7XcA1.jpg" alt="Logo Sports Bar" />
-      <h1>Sports Bar</h1>
+      <img src="https://i.ibb.co/XYZ123/sports-bar-logo.png" alt="Logo Sports Bar" style="max-width: 200px;" />
+      <h1>Sports Bar Premium</h1>
       <p>Best Craft Beer • Jogo na TV • Ambiente Animado</p>
     </div>
 
+    <!-- Menu -->
     <div class="menu">
 
       <div class="section">
@@ -116,11 +146,11 @@
       </div>
 
       <div class="promo">
-        <strong>🎯 Promoção:</strong> 2 cervejas por R$ 20,00 (segunda a sexta)
+        🎯 Promoção Especial: 2 cervejas por R$ 20,00 (segunda a sexta)
       </div>
 
       <div class="section">
-        <h2>Combo</h2>
+        <h2>Combos</h2>
         <div class="item">
           <span>Combo Cerveja + Batata Frita</span>
           <span class="price">R$ 25,00</span>
@@ -132,7 +162,14 @@
       </div>
 
     </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+      <p>© 2025 Sports Bar Premium • Todos os direitos reservados</p>
+    </div>
+
   </div>
 
 </body>
 </html>
+
