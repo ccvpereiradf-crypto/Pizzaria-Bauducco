@@ -75,8 +75,8 @@ Cardápio digital da Pizzaria Bauducco
   </div>
 
   <footer>
-    📞 Peça pelo WhatsApp: (11) 91234-5678<br>
-    📍 Rua das Pizzas, 123 - Centro
+    📞 Peça pelo WhatsApp: (61) 9999244244<br>
+    📍 Qms 18 Rua Casa 21 - Sobradinho DF
   </footer>
 
 </body>
