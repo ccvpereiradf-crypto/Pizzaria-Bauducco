@@ -1,83 +1,224 @@
-# Pizzaria-Bauducco
-Cardápio digital 
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cardápio Digital</title>
+  <title>Trattoria Bella Vista - Cardápio Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f8f8f8;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f9f7f4;
       color: #333;
+      line-height: 1.6;
       padding: 20px;
-      max-width: 800px;
+    }
+
+    .container {
+      max-width: 900px;
       margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
+
     header {
+      background: #d40000;
+      color: white;
       text-align: center;
-      border-bottom: 2px solid #d40000;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
+      padding: 30px 20px;
     }
-    h1 {
+
+    header .logo {
+      max-width: 180px;
+      margin: 0 auto 15px;
+      display: block;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2em;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-weight: 500;
+      opacity: 0.9;
+      font-size: 1.1em;
+    }
+
+    .menu-section {
+      padding: 25px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .menu-section h2 {
       color: #d40000;
-    }
-    .categoria {
-      background-color: #fff;
-      padding: 15px;
+      font-size: 1.6em;
       margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #eee;
+      display: inline-block;
+    }
+
+    .menu-item {
+      display: flex;
+      margin-bottom: 20px;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .menu-item img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex-shrink: 0;
     }
-    .item {
-      margin-bottom: 10px;
+
+    .item-content {
+      flex: 1;
     }
-    .item strong {
+
+    .item-content .name {
+      font-weight: 600;
+      font-size: 1.1em;
       color: #222;
     }
+
+    .item-content .price {
+      color: #d40000;
+      font-weight: 700;
+      margin-left: 10px;
+    }
+
+    .item-content small {
+      color: #666;
+      display: block;
+      margin-top: 5px;
+      font-size: 0.95em;
+    }
+
     footer {
       text-align: center;
-      margin-top: 30px;
-      color: #666;
-      font-size: 0.9em;
+      padding: 25px;
+      background: #f1f1f1;
+      color: #555;
+      font-size: 0.95em;
+    }
+
+    footer a {
+      color: #d40000;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+      .menu-item {
+        flex-direction: column;
+      }
+      .menu-item img {
+        width: 100%;
+        max-width: 200px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Pizzaria Boa</h1>
-    <p>🍕 Desde 2020 fazendo a melhor pizza da cidade</p>
-  </header>
+  <div class="container">
+    <header>
+      <!-- LOGO: substitua pelo link do seu logo no Imgur -->
+      <img src="https://i.imgur.com/0qR1l9b.png" alt="Logo Trattoria Bella Vista" class="logo">
+      <h1>Trattoria Bella Vista</h1>
+      <p>🍝 Desde 1995 servindo a melhor comida italiana da cidade</p>
+    </header>
 
-  <div class="categoria">
-    <h2>🍕 Pizzas Salgadas</h2>
-    <div class="item">
-      <strong>Margherita</strong> - R$ 45,00<br>
-      <small>Molho de tomate, mussarela, manjericão fresco</small>
-    </div>
-    <div class="item">
-      <strong>Calabresa</strong> - R$ 48,00<br>
-      <small>Molho, mussarela, calabresa, cebola</small>
-    </div>
+    <section class="menu-section">
+      <h2>🍝 Massas</h2>
+
+      <div class="menu-item">
+        <img src="https://i.imgur.com/mF2TbYc.jpg" alt="Espaguete à Carbonara">
+        <div class="item-content">
+          <span class="name">Espaguete à Carbonara</span>
+          <span class="price">R$ 42,00</span>
+          <small>Com ovos, bacon artesanal, queijo parmesão e pimenta-do-reino.</small>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://i.imgur.com/3JZj5Vh.jpg" alt="Nhoque ao Pesto">
+        <div class="item-content">
+          <span class="name">Nhoque ao Pesto</span>
+          <span class="price">R$ 38,00</span>
+          <small>Nhoque caseiro com molho pesto, tomate cereja e queijo ralado.</small>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="menu-section">
+      <h2>🍕 Pizzas</h2>
+
+      <div class="menu-item">
+        <img src="https://i.imgur.com/ZYq6789.jpg" alt="Pizza Margherita">
+        <div class="item-content">
+          <span class="name">Pizza Margherita</span>
+          <span class="price">R$ 45,00</span>
+          <small>Molho de tomate fresco, mussarela premium, manjericão e azeite extravirgem.</small>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://i.imgur.com/XYZ1234.jpg" alt="Pizza Calabresa">
+        <div class="item-content">
+          <span class="name">Pizza Calabresa</span>
+          <span class="price">R$ 48,00</span>
+          <small>Mussarela, calabresa defumada, cebola e azeitonas pretas.</small>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="menu-section">
+      <h2>🥤 Bebidas</h2>
+
+      <div class="menu-item">
+        <img src="https://i.imgur.com/abc123xyz.jpg" alt="Refrigerante 350ml">
+        <div class="item-content">
+          <span class="name">Refrigerante Lata</span>
+          <span class="price">R$ 8,00</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://i.imgur.com/def456uvw.jpg" alt="Suco Natural 500ml">
+        <div class="item-content">
+          <span class="name">Suco Natural</span>
+          <span class="price">R$ 12,00</span>
+          <small>Laranja, abacaxi ou limão com hortelã.</small>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <p>📞 Peça pelo WhatsApp: target="_blank">(61) 999244244</a></p>
+      <p>📍 Qms 18 Rua 12 Casa 21 Sobradinho DF</p>
+      <p>⏰ Atendimento: Terça a Domingo, das 18h às 23h</p>
+    </footer>
   </div>
-
-  <div class="categoria">
-    <h2>🥤 Bebidas</h2>
-    <div class="item">
-      <strong>Refrigerante 350ml</strong> - R$ 8,00
-    </div>
-    <div class="item">
-      <strong>Água 500ml</strong> - R$ 5,00
-    </div>
-  </div>
-
-  <footer>
-    📞 Peça pelo WhatsApp: (61) 9999244244<br>
-    📍 Qms 18 Rua Casa 21 - Sobradinho DF
-  </footer>
 
 </body>
 </html>
