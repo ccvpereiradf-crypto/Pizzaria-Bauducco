@@ -1,5 +1,5 @@
 # Pizzaria-Bauducco
-Cardápio digital da Pizzaria Bauducco
+Cardápio digital 
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
